@@ -1,0 +1,82 @@
+module fpga_1219(
+    input PB1,
+	 input PB2,
+	 input clk,
+	 input rst,
+	 output reg [1:0] LED
+    );
+	 reg order=0;
+	 reg start1=0;
+	 reg start2=0;
+	 reg[30:0] cnt;
+
+	 always@(posedge clk)begin
+ 
+	 if(rst==0)
+	 begin
+	 cnt=0;
+	 LED=4'b1111;
+	 order=0;
+	 start1=0;
+	 start2=0;
+	 //temp_oct=0; 
+	 end
+	 if(PB1==0) 
+	 begin
+	 start1=1;
+	 start2=0;
+	 end
+	 else if(PB2==0) 
+	 begin
+	 start2=1;
+	 start1=0;
+	 end
+	 if(start1==1)
+	 begin
+		 if(cnt==0)
+		 begin
+		 LED=2'b11;
+		 end
+		 else if(cnt==30'd50000000)
+		 begin
+		 LED=2'b10;
+		 end
+		 else if(cnt==30'd100000000)
+		 begin
+		 LED=2'b01;
+		 end
+		 else if(cnt==30'd150000000)
+		 begin
+		 LED=2'b00;
+		 end	
+		 else if(cnt==30'd200000000)
+		 begin
+		 cnt=0;
+		 end		
+	 end
+	 else if(start2==1)
+	 begin
+		 if(cnt==0)
+		 begin
+		 LED=2'b11;
+		 end
+		 else if(cnt==30'd25000000)
+		 begin
+		 LED=2'b10;
+		 end
+		 else if(cnt==30'd50000000)
+		 begin
+		 LED=2'b01;
+		 end
+		 else if(cnt==30'd75000000)
+		 begin
+		 LED=2'b00;
+		 end	
+		 else if(cnt==30'd100000000)
+		 begin
+		 cnt=0;
+		 end		
+	 end
+	end
+
+endmodule

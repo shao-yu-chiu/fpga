@@ -1,0 +1,64 @@
+`timescale 1ns / 1ps
+module fpga_1205(
+    input p,
+	 input rst,
+	 input clk,
+	 output reg [1:0] Led
+
+    );
+	wire o_clk; 
+	parameter S0=2'b11;
+	parameter S1=2'b10;
+	parameter S2=2'b01;
+	parameter S3=2'b00;
+	
+	divclk div(.clk(clk),.o_clk(o_clk));
+	always@(posedge o_clk)
+	begin
+	if(p==1)
+			begin
+			led=S0;
+			led=S1;
+			led=S2;
+			led=S3;
+			end
+	else if(p==0)
+			begin
+			led=S0;
+			led=S3;
+			led=S2;
+			led=S1;
+		
+			end
+	if(rst==0)	
+	begin
+	Led=S0;
+	end
+	end
+
+endmodule
+
+module divclk(
+input clk,
+input rst, 
+output reg o_clk);
+
+parameter N=13500000;
+reg [25:0] cnt;
+
+always@(posedge clk or posedge rst) begin
+
+if(rst) begin cnt<=0; end
+else if (cnt==(N-1)) begin cnt<=0; end
+else begin cnt<=cnt+1'b1;end
+end
+
+always@(posedge clk or posedge rst) begin
+
+if(rst) begin o_clk<=0; end
+else if (cnt<(N>>1)) begin o_clk<=1'b1; end
+else begin o_clk<=1'b0; end
+end
+
+endmodule
+

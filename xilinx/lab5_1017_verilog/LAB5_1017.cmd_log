@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/User/Desktop/109360142/lab5_1017_verilog/LAB5_1017.xst" -ofn "C:/Users/User/Desktop/109360142/lab5_1017_verilog/LAB5_1017.syr" 
+xst -intstyle ise -ifn "C:/Users/User/Desktop/109360142/lab5_1017_verilog/LAB5_1017.xst" -ofn "C:/Users/User/Desktop/109360142/lab5_1017_verilog/LAB5_1017.syr" 

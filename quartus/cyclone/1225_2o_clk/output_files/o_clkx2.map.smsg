@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at o_clkx2.v(22): always construct contains both blocking and non-blocking assignments File: I:/fpga ppt/109360142/quartus/cyclone/1225_2o_clk/o_clkx2.v Line: 22
+Warning (10268): Verilog HDL information at o_clkx2.v(46): always construct contains both blocking and non-blocking assignments File: I:/fpga ppt/109360142/quartus/cyclone/1225_2o_clk/o_clkx2.v Line: 46

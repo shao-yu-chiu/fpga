@@ -1,0 +1,15 @@
+|test_divider
+clk => state~1.DATAIN
+rst_n => state~3.DATAIN
+A => Selector2.IN2
+A => Selector0.IN1
+A => Selector6.IN1
+A => Selector4.IN1
+A => Selector5.IN3
+A => Selector7.IN3
+A => Selector1.IN1
+A => Selector3.IN1
+K2 << K2$latch.DB_MAX_OUTPUT_PORT_TYPE
+K1 << K1$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

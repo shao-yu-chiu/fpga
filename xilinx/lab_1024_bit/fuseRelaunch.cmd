@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "I:/fpga ppt/109360142/lab_1024_bit/lab_1024_bit_test_isim_beh.exe" -prj "I:/fpga ppt/109360142/lab_1024_bit/lab_1024_bit_test_beh.prj" "work.lab_1024_bit_test" "work.glbl" 

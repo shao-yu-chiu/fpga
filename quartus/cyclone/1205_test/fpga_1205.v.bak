@@ -1,0 +1,72 @@
+`timescale 1ns / 1ps
+module fpga_1205(
+    input p,
+	 input rst,
+	 input clk,
+	 output reg [1:0] Led
+
+    );
+	reg [27:0] cnt;
+	
+	always@(posedge clk)
+	begin
+	if(cnt==27'd50000000)
+		cnt<=0;
+	else if(p)
+			begin
+			cnt<=0;
+			if(cnt<27'd12500000)begin
+			Led[0]=1'b0;
+			Led[1]=1'b0;
+			cnt<=cnt+1;
+			end
+			else if(cnt<27'd25000000)begin
+			Led[0]=1'b0;
+			Led[1]=1'b1;
+			cnt<=cnt+1;
+			end	
+			else if(cnt<27'd37500000)begin
+			Led[0]=1'b1;
+			Led[1]=1'b1;
+			cnt<=cnt+1;
+			end	
+			else if(cnt<27'd50000000)begin
+			Led[0]=1'b1;
+			Led[1]=1'b0;
+			cnt<=cnt+1;
+			end	
+			end
+	else if(p==0)
+			begin
+			cnt<=0;
+			if(cnt<27'd12500000)begin
+			Led[0]=1'b0;
+			Led[1]=1'b0;
+			cnt<=cnt+1;
+			end
+			else if(cnt<27'd25000000)begin
+			Led[0]=1'b1;
+			Led[1]=1'b0;
+			cnt<=cnt+1;
+			end	
+			else if(cnt<27'd37500000)begin
+			Led[0]=1'b1;
+			Led[1]=1'b1;
+			cnt<=cnt+1;
+			end	
+			else if(cnt<27'd50000000)begin
+			Led[0]=1'b0;
+			Led[1]=1'b1;
+			cnt<=cnt+1;
+			end	
+			end
+	if(rst)	
+	begin
+	Led[0]=1'b0;
+	Led[1]=1'b0;
+	cnt<=0;
+	end
+	end
+
+endmodule
+

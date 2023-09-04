@@ -1,0 +1,16 @@
+Fitter Status : Successful - Sat Dec 17 20:17:28 2022
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : fpga1212
+Top-level Entity Name : fpga1212
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 93 / 6,272 ( 1 % )
+    Total combinational functions : 91 / 6,272 ( 1 % )
+    Dedicated logic registers : 40 / 6,272 ( < 1 % )
+Total registers : 40
+Total pins : 14 / 92 ( 15 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

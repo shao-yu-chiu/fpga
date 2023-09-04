@@ -1,0 +1,17 @@
+module fpga1121(
+    input P0,
+    input P1,
+    input P2,
+    input P3,
+    output wire L0,
+    output wire L1,
+    output wire L2,
+    output wire L3 
+    );
+	 
+assign L0=P0;
+assign L1=P1;
+assign L2=P2;
+assign L3=P3;
+
+endmodule

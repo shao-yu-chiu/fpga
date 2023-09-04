@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\User\Desktop\Lab1205new\lab1212\fpga1212.ncd
+OUTFILE=C:\Users\User\Desktop\Lab1205new\lab1212\fpga1212.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=C:\Users\User\Desktop\Lab1205new\lab1212
+LICENSE=WebPack
+USER_INFO=212209677_0_0_330

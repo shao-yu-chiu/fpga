@@ -1,0 +1,136 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    09:34:17 12/19/2022 
+// Design Name: 
+// Module Name:    wire_buffer 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module wire_buffer(
+    input rst,
+    input clk,
+	 input start,
+	 input [3:0] dip,
+    output reg [3:0] out
+    );
+	reg [3:0]i;
+	reg [3:0]temp;
+	reg a;
+wire o_clk;
+
+divclk dclk(.clk(clk),.rst(rst),.o_clk(o_clk));
+
+always@(posedge o_clk or negedge rst)
+begin
+	if(rst == 1'b0)
+	begin
+		out = 4'b1111;
+		i = 4'b1111;
+		a = 1'b0;
+	end
+	else if(start==0) a=1;
+	else if(a)
+	begin
+		if(dip == 4'b1000)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b1000: out<=4'b0111;
+				4'b1001: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+		else if(dip == 4'b0100)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b0100: out<=4'b0111;
+				4'b0101: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+		else if(dip == 4'b0010)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b0010: out<=4'b0111;
+				4'b0011: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+		else if(dip == 4'b0011)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b0011: out<=4'b0111;
+				4'b0100: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+		else if(dip == 4'b0101)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b0101: out<=4'b0111;
+				4'b0110: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+		else if(dip == 4'b0110)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b0110: out<=4'b0111;
+				4'b0111: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+		else if(dip == 4'b0111)
+		begin
+			case(i)
+				4'b0000:	out<=4'b0001;
+				4'b0001: out<=4'b0011;
+				4'b0111: out<=4'b0111;
+				4'b1000: out<=4'b1111;
+			endcase
+			i <= i+4'b0001;
+		end
+	end
+end
+endmodule
+
+
+module divclk(input clk,input rst, output reg o_clk);
+	parameter N = 13500000;
+	reg [25:0]cnt;
+	
+	always@(posedge clk or posedge rst)begin
+		if(rst) begin cnt<=0; end
+		else if(cnt ==(N-1))begin cnt <=0;end
+		else begin cnt <=cnt+1'b1;end
+		end
+		
+	always@(posedge clk or posedge rst)begin
+		if(rst) begin o_clk<= 1'b0;end
+		else if(cnt < (N>>1)) begin o_clk <=1'b1;end
+		else begin o_clk <= 1'b0;end
+		end
+endmodule 

@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Dec 13 00:36:44 2022
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : test1212
+Top-level Entity Name : test1212
+Family : Cyclone IV E
+Device : EP4CE6E22C8
+Timing Models : Final
+Total logic elements : 178 / 6,272 ( 3 % )
+    Total combinational functions : 178 / 6,272 ( 3 % )
+    Dedicated logic registers : 33 / 6,272 ( < 1 % )
+Total registers : 33
+Total pins : 13 / 92 ( 14 % )
+Total virtual pins : 0
+Total memory bits : 0 / 276,480 ( 0 % )
+Embedded Multiplier 9-bit elements : 0 / 30 ( 0 % )
+Total PLLs : 0 / 2 ( 0 % )

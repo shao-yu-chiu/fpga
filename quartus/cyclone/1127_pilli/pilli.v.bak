@@ -1,0 +1,29 @@
+module pilli{
+	input reg [3:0]btn,
+	input clk,
+	output [7:0]led
+};
+reg [26:0] cnt;
+
+always@(posedge clk)
+begin
+	if(cnt==27'd50000000)begin
+		cnt<=0;
+	end
+	else if(btn[0]==1'b0)begin
+			led[0]<=1'b1;
+		for(int i=1;i<7;i++)begin
+			led[i]<=1'b0;
+		end
+		for(int i=0;i<7;i++)begin
+			led[i]<=~led[i];
+			led[i+1]<=~led[i+1];
+		end
+		for(int i=6;i>0;i--)begin
+			led[i]<=~led[i];
+			led[i-1]<=~led[i-1];
+		end
+	end
+	
+end
+endmodule

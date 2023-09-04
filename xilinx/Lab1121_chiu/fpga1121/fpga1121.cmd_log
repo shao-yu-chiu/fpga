@@ -1,0 +1,22 @@
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga1121_ucf.ucf -p xc6slx16-csg324-3 "fpga1121.ngc" fpga1121.ngd  
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga1121_ucf.ucf -p xc6slx16-csg324-3 "fpga1121.ngc" fpga1121.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga1121_map.ncd fpga1121.ngd fpga1121.pcf 
+par -w -intstyle ise -ol high -mt off fpga1121_map.ncd fpga1121.ncd fpga1121.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga1121.twx fpga1121.ncd -o fpga1121.twr fpga1121.pcf -ucf fpga1121_ucf.ucf 
+bitgen -intstyle ise -f fpga1121.ut fpga1121.ncd 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.xst" -ofn "E:/fpga ppt/109360142/Lab1121_chiu/fpga1121/fpga1121.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc fpga1121_ucf.ucf -p xc6slx16-csg324-3 "fpga1121.ngc" fpga1121.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o fpga1121_map.ncd fpga1121.ngd fpga1121.pcf 
+par -w -intstyle ise -ol high -mt off fpga1121_map.ncd fpga1121.ncd fpga1121.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml fpga1121.twx fpga1121.ncd -o fpga1121.twr fpga1121.pcf -ucf fpga1121_ucf.ucf 
+bitgen -intstyle ise -f fpga1121.ut fpga1121.ncd 

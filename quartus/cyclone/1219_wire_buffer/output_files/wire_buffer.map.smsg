@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at wire_buffer.v(35): always construct contains both blocking and non-blocking assignments File: G:/altera_quartus_cyclone4/1219_wire_buffer/wire_buffer.v Line: 35

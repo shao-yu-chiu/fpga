@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=E:\fpga ppt\109360142\Lab1121_chiu\fpga1121\fpga1121.ncd
+OUTFILE=E:\fpga ppt\109360142\Lab1121_chiu\fpga1121\fpga1121.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=E:\fpga ppt\109360142\Lab1121_chiu\fpga1121
+LICENSE=WebPack
+USER_INFO=212209677_0_0_330

@@ -1,0 +1,7 @@
+
+State Machine - |test_divider|state
+Name state.IDLE state.START state.STOP state.CLEAR 
+state.IDLE 0 0 0 0 
+state.STOP 1 0 1 0 
+state.START 1 1 0 0 
+state.CLEAR 1 0 0 1 

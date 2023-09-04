@@ -1,0 +1,44 @@
+|test_divider
+P[0] => L.DATAA
+P[0] => always0.IN0
+P[1] => L.DATAA
+P[2] => L.DATAA
+P[3] => L.DATAA
+P[3] => always0.IN1
+clk => L[0]~reg0.CLK
+clk => L[1]~reg0.CLK
+clk => L[2]~reg0.CLK
+clk => L[3]~reg0.CLK
+clk => cnt[0].CLK
+clk => cnt[1].CLK
+clk => cnt[2].CLK
+clk => cnt[3].CLK
+clk => cnt[4].CLK
+clk => cnt[5].CLK
+clk => cnt[6].CLK
+clk => cnt[7].CLK
+clk => cnt[8].CLK
+clk => cnt[9].CLK
+clk => cnt[10].CLK
+clk => cnt[11].CLK
+clk => cnt[12].CLK
+clk => cnt[13].CLK
+clk => cnt[14].CLK
+clk => cnt[15].CLK
+clk => cnt[16].CLK
+clk => cnt[17].CLK
+clk => cnt[18].CLK
+clk => cnt[19].CLK
+clk => cnt[20].CLK
+clk => cnt[21].CLK
+clk => cnt[22].CLK
+clk => cnt[23].CLK
+clk => cnt[24].CLK
+clk => cnt[25].CLK
+clk => cnt[26].CLK
+L[0] << L[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+L[1] << L[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+L[2] << L[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+L[3] << L[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

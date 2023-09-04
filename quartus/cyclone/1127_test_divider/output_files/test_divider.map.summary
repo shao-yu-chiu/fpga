@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue Dec 13 23:28:45 2022
+Quartus Prime Version : 17.0.0 Build 595 04/25/2017 SJ Lite Edition
+Revision Name : test_divider
+Top-level Entity Name : test_divider
+Family : Cyclone IV E
+Total logic elements : 53
+    Total combinational functions : 53
+    Dedicated logic registers : 31
+Total registers : 31
+Total pins : 9
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

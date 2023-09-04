@@ -1,0 +1,43 @@
+`timescale 1ns / 1ps
+//////////////////////////////////////////////////////////////////////////////////
+// Company: 
+// Engineer: 
+// 
+// Create Date:    10:33:24 11/21/2022 
+// Design Name: 
+// Module Name:    Exam 
+// Project Name: 
+// Target Devices: 
+// Tool versions: 
+// Description: 
+//
+// Dependencies: 
+//
+// Revision: 
+// Revision 0.01 - File Created
+// Additional Comments: 
+//
+//////////////////////////////////////////////////////////////////////////////////
+module Exam(
+    input [3:0]P
+    input clk,
+    input rst,
+    output reg [3:0]L
+    );
+	 wire o_clk;
+	 parameter size=13500000;
+	 divclk #(size)dclk(.clk(clk),.rst(rst),.o_clk(o_clk));
+	
+	always@(posedge o_clk)begin
+	if(P0&&P3&&~P1&&~P2)begin
+	L3<=o_clk;
+	L0<=o_clk;
+	end
+	else begin
+	L<=P;
+	end
+	
+	end
+	
+endmodule
+

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at test_divider.v(25): always construct contains both blocking and non-blocking assignments File: G:/altera_quartus_cyclone4/1209test_divider/test_divider.v Line: 25

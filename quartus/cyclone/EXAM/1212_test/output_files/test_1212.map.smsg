@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at test_1212.v(15): always construct contains both blocking and non-blocking assignments File: D:/fpga ppt/109360142/quartus/cyclone/EXAM/1212_test/test_1212.v Line: 15

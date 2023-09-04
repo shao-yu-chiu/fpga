@@ -1,0 +1,18 @@
+
+
+NET "clk" LOC="V10";
+
+NET "dip[0]" LOC = "D14"; ## 1 on SW8 DIP Sw
+NET "dip[1]" LOC = "E12"; ## 2 on SW8 DIP Sw
+NET "dip[2]" LOC = "F12"; ## 3 on SW8 DIP Sw
+NET "dip[3]" LOC = "V13"; ## 4 on SW8 DIP Sw
+
+NET "P[0]" LOC = "P4"; ## 2 on SW6 pushbutton
+NET "P[1]" LOC = "F6"; ## 2 on SW4 pushbutton
+NET "P[2]" LOC = "E4"; ## 2 on SW5 pushbutton
+NET "P[3]" LOC = "F5"; ## 2 on SW7 pushbutton
+
+NET "LED[0]" LOC = "E13"; ## 2 on DS11 LED
+NET "LEd[1]" LOC = "C14"; ## 2 on DS12 LED
+NET "LED[2]" LOC = "C4"; ## 2 on DS13 LED
+NET "LED[3]" LOC = "A4"; ## 2 on DS14 LED

@@ -1,0 +1,1 @@
+Warning (10268): Verilog HDL information at fpga1127.v(31): always construct contains both blocking and non-blocking assignments File: D:/fpga ppt/109360142/quartus/cyclone/EXAM/1127_NEW/fpga1127.v Line: 31

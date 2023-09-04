@@ -1,0 +1,2 @@
+¥Îreg
+on left-hand side of assignment must have a variable data type

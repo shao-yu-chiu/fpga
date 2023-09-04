@@ -1,0 +1,21 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "C:/Users/User/Desktop/109360142/lab5_1017_verilog/lab5_1017_test_isim_beh.exe" -prj "C:/Users/User/Desktop/109360142/lab5_1017_verilog/lab5_1017_test_beh.prj" "work.lab5_1017_test" "work.glbl" 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/Users/User/Desktop/109360142/lab5_1017_verilog/LAB5_1017.v" into library work
+WARNING:HDLCompiler:751 - "C:/Users/User/Desktop/109360142/lab5_1017_verilog/LAB5_1017.v" Line 30: Redeclaration of ansi port Y is not allowed
+Analyzing Verilog file "C:/Users/User/Desktop/109360142/lab5_1017_verilog/lab5_1017_test.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+Completed static elaboration
+Compiling module LAB5_1017
+Compiling module lab5_1017_test
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系統找不到指定的路徑。, "isim\lab5_1017_test_isim_beh.exe.sim\libPortability.dll".
+Compiled 3 Verilog Units
+Built simulation executable C:/Users/User/Desktop/109360142/lab5_1017_verilog/lab5_1017_test_isim_beh.exe
+Fuse Memory Usage: 27984 KB
+Fuse CPU Usage: 280 ms

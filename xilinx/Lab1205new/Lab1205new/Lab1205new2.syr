@@ -1,0 +1,407 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Lab1205new2.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Lab1205new2.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Lab1205new2"
+Output Format                      : NGC
+Target Device                      : xc6slx16-3-csg324
+
+---- Source Options
+Top Module Name                    : Lab1205new2
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" into library work
+Parsing module <Lab1205new2>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating module <Lab1205new2>.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 21: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 26: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 31: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 36: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 45: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 50: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 55: Result of 29-bit expression is truncated to fit in 28-bit target.
+WARNING:HDLCompiler:413 - "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v" Line 60: Result of 29-bit expression is truncated to fit in 28-bit target.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Lab1205new2>.
+    Related source file is "E:\fpga ppt\109360142\Lab1205new\Lab1205new\Lab1205new2.v".
+    Found 2-bit register for signal <Led>.
+    Found 28-bit register for signal <cnt>.
+    Found 28-bit adder for signal <cnt[27]_GND_1_o_add_26_OUT> created at line 60.
+    Found 28-bit comparator greater for signal <cnt[27]_GND_1_o_LessThan_20_o> created at line 42
+    Found 28-bit comparator greater for signal <cnt[27]_GND_1_o_LessThan_22_o> created at line 47
+    Found 28-bit comparator greater for signal <cnt[27]_GND_1_o_LessThan_24_o> created at line 52
+    Found 28-bit comparator greater for signal <cnt[27]_GND_1_o_LessThan_26_o> created at line 57
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  30 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred   7 Multiplexer(s).
+Unit <Lab1205new2> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 28-bit adder                                          : 1
+# Registers                                            : 2
+ 2-bit register                                        : 1
+ 28-bit register                                       : 1
+# Comparators                                          : 4
+ 28-bit comparator greater                             : 4
+# Multiplexers                                         : 7
+ 2-bit 2-to-1 multiplexer                              : 3
+ 28-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 28-bit adder                                          : 1
+# Registers                                            : 30
+ Flip-Flops                                            : 30
+# Comparators                                          : 4
+ 28-bit comparator greater                             : 4
+# Multiplexers                                         : 7
+ 2-bit 2-to-1 multiplexer                              : 3
+ 28-bit 2-to-1 multiplexer                             : 4
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Lab1205new2> ...
+WARNING:Xst:1710 - FF/Latch <cnt_26> (without init value) has a constant value of 0 in block <Lab1205new2>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <cnt_27> (without init value) has a constant value of 0 in block <Lab1205new2>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Lab1205new2, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 28
+ Flip-Flops                                            : 28
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : Lab1205new2.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 167
+#      GND                         : 1
+#      INV                         : 2
+#      LUT1                        : 26
+#      LUT2                        : 2
+#      LUT3                        : 7
+#      LUT4                        : 7
+#      LUT5                        : 17
+#      LUT6                        : 33
+#      MUXCY                       : 45
+#      VCC                         : 1
+#      XORCY                       : 26
+# FlipFlops/Latches                : 28
+#      FD                          : 26
+#      FDR                         : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
+#      OBUF                        : 2
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx16csg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              28  out of  18224     0%  
+ Number of Slice LUTs:                   94  out of   9112     1%  
+    Number used as Logic:                94  out of   9112     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     94
+   Number with an unused Flip Flop:      66  out of     94    70%  
+   Number with an unused LUT:             0  out of     94     0%  
+   Number of fully used LUT-FF pairs:    28  out of     94    29%  
+   Number of unique control sets:         2
+
+IO Utilization: 
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 28    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 5.037ns (Maximum Frequency: 198.533MHz)
+   Minimum input arrival time before clock: 3.478ns
+   Maximum output required time after clock: 3.668ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.037ns (frequency: 198.533MHz)
+  Total number of paths / destination ports: 4779 / 28
+-------------------------------------------------------------------------
+Delay:               5.037ns (Levels of Logic = 8)
+  Source:            cnt_7 (FF)
+  Destination:       Led_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: cnt_7 to Led_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.447   1.174  cnt_7 (cnt_7)
+     LUT5:I0->O            1   0.203   0.000  Mcompar_cnt[27]_GND_1_o_LessThan_22_o_lut<0> (Mcompar_cnt[27]_GND_1_o_LessThan_22_o_lut<0>)
+     MUXCY:S->O            1   0.172   0.000  Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<0> (Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<1> (Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<2> (Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<3> (Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<3>)
+     MUXCY:CI->O          28   0.213   1.579  Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<4> (Mcompar_cnt[27]_GND_1_o_LessThan_22_o_cy<4>)
+     LUT6:I1->O            1   0.203   0.684  Led_0_glue_set_F (N0)
+     LUT3:I1->O            1   0.203   0.000  Led_0_glue_set1 (Led_0_glue_set)
+     FDR:D                     0.102          Led_0
+    ----------------------------------------
+    Total                      5.037ns (1.600ns logic, 3.437ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 30 / 30
+-------------------------------------------------------------------------
+Offset:              3.478ns (Levels of Logic = 3)
+  Source:            rst (PAD)
+  Destination:       cnt_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: rst to cnt_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.222   0.788  rst_IBUF (rst_IBUF)
+     LUT2:I0->O           14   0.203   0.958  cnt[27]_GND_1_o_equal_2_o_01 (cnt[27]_GND_1_o_equal_2_o_0)
+     LUT6:I5->O            1   0.205   0.000  cnt_0_rstpot (cnt_0_rstpot)
+     FD:D                      0.102          cnt_0
+    ----------------------------------------
+    Total                      3.478ns (1.732ns logic, 1.746ns route)
+                                       (49.8% logic, 50.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.668ns (Levels of Logic = 1)
+  Source:            Led_1 (FF)
+  Destination:       Led<1> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Led_1 to Led<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              3   0.447   0.650  Led_1 (Led_1)
+     OBUF:I->O                 2.571          Led_1_OBUF (Led<1>)
+    ----------------------------------------
+    Total                      3.668ns (3.018ns logic, 0.650ns route)
+                                       (82.3% logic, 17.7% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    5.037|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.22 secs
+ 
+--> 
+
+Total memory usage is 4486656 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

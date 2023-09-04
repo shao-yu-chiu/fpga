@@ -1,0 +1,51 @@
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+bitgen -intstyle ise -f Lab1205new2.ut Lab1205new2.ncd 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+bitgen -intstyle ise -f Lab1205new2.ut Lab1205new2.ncd 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx45t-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx45t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx16-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+bitgen -intstyle ise -f Lab1205new2.ut Lab1205new2.ncd 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx16-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+bitgen -intstyle ise -f Lab1205new2.ut Lab1205new2.ncd 
+xst -intstyle ise -ifn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.xst" -ofn "E:/fpga ppt/109360142/Lab1205new/Lab1205new/Lab1205new2.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Lab1205new_ucf.ucf -p xc6slx16-csg324-3 "Lab1205new2.ngc" Lab1205new2.ngd  
+map -intstyle ise -p xc6slx16-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o Lab1205new2_map.ncd Lab1205new2.ngd Lab1205new2.pcf 
+par -w -intstyle ise -ol high -mt off Lab1205new2_map.ncd Lab1205new2.ncd Lab1205new2.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml Lab1205new2.twx Lab1205new2.ncd -o Lab1205new2.twr Lab1205new2.pcf -ucf Lab1205new_ucf.ucf 
+bitgen -intstyle ise -f Lab1205new2.ut Lab1205new2.ncd 
